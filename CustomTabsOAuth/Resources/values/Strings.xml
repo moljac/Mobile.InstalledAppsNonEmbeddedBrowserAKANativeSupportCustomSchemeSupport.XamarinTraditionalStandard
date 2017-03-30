@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Custom Tabs OAuth</string>
+	<string name="login">Login</string>
+	<string name="complete">Authentication Complete:</string>
+	<string name="unknown">...</string>
+	<!-- OAuth -->
+	<string name="client_id">194a3e1d6828b0c8c35f</string>
+	<string name="oauth_request_url">https://github.com/login/oauth/authorize?client_id=%1$s</string>
+	<string name="callback_scheme">xamarin-auth</string>
+	<string name="callback_host">localhost</string>
+</resources>

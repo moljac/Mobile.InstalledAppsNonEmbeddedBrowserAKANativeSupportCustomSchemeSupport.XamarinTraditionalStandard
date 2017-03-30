@@ -15,17 +15,10 @@ namespace CustomTabsTest
                 Icon = "@mipmap/icon"
             )
     ]
-    [
-        IntentFilter
-        (
-            new[] { "net.holisticware.xamarin.android.customtabstest.HANDLE_AUTHORIZATION_RESPONSE" },
-            Categories = new[]
-                {
-                    Intent.CategoryDefault,
-                }
-        )
-    ]
-    public partial class MainActivity : Activity
+    public partial class MainActivity 
+            :
+            Activity // NOGO???
+            //Android.Support.V7.App.AppCompatActivity
     {
         string USED_INTENT = "USED_INTENT";
 
@@ -125,11 +118,6 @@ namespace CustomTabsTest
             customTabsIntent.Intent.AddFlags(Android.Content.ActivityFlags.NoHistory);
             customTabsIntent.LaunchUrl(this, Android.Net.Uri.Parse(url));
 
-            return;
-        }
-
-        protected override void OnNewIntent(Android.Content.Intent intent)
-        {
             return;
         }
 
